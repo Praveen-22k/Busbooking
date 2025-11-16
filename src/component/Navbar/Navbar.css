@@ -1,0 +1,16 @@
+.nav{
+    background-color: #540863;
+    height: 70px;  
+    
+}
+.custom-nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ 
+}
+
+.navbar-nav a {
+  color: #FFF7F7;
+}
+
