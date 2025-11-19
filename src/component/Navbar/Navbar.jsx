@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className=''><nav class="navbar navbar-expand-lg custom-nav" style={{backgroundColor:'#B027F5'}}>
   <div class="container nav  " >
-    <a class="navbar-brand fw-bolder fs-4 "  style={{ color: "#FFF7F7", textDecoration: "underline" }} href="#"><BsBusFrontFill  size={30}/>TripEasy...</a>
+    <Link to={'/'} class="navbar-brand fw-bolder fs-4 "  style={{ color: "#FFF7F7", textDecoration: "underline" }} href="#"><BsBusFrontFill  size={30}/>TripEasy...</Link>  
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

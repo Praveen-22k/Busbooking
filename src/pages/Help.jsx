@@ -30,7 +30,7 @@ const Help = () => {
           </div>
 
        
-          <button className="btn btn-success mt-3 w-75 w-md-50">
+          <button className="btn  mt-3 w-75 w-md-50" style={{backgroundColor:'#B027F5', color:'#FFFF'}}>
             Contact Us
           </button>
         </div>
