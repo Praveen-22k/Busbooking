@@ -24,6 +24,21 @@
   }
 }
 
-.banbut{
+.banbut button {
+  background-color: #fff;
+  color: #b027f5;
+  border: 2px solid #b027f5;
+  border-radius: 25px; /* rounded */
+  padding: 8px 20px;  /* better spacing */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.banbut button Link
+{ color: #b027f5
+}
+
+.banbut button:hover {
   background-color: #b027f5;
+  color: #fff
 }

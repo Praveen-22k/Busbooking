@@ -1,10 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import { Ba1 } from "../../assets/assests";
 import { Ba2 } from "../../assets/assests";
 import { Ba3 } from "../../assets/assests";
 import "../Banner/Banner.css";
 import { Link } from "react-router-dom";
 const Banner = () => {
+  const [color, setColor] = useState('#6A1B9A');
   return (
     <div className="position-relative">
       <div
@@ -80,7 +81,17 @@ const Banner = () => {
         </div>
         <div className="position-absolute top-100 start-50 translate-middle banbut">
           <button className="">
-            <Link to="/search">Search Bus</Link>
+            <Link to="/search" className="text-decoration-none fw-bolder">
+              {" "}
+              <span
+                className=""
+                style={{ color }}
+                onMouseEnter={() => setColor("#ffffff")}
+                onMouseLeave={() => setColor("#6A1B9A")}
+              >
+                Search Bus
+              </span>
+            </Link>
           </button>
         </div>
       </div>
