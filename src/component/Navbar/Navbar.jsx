@@ -3,9 +3,9 @@ import { FaRegUserCircle } from "react-icons/fa";
 import '../Navbar/Navbar.css'
 const Navbar = () => {
   return (
-    <div className=''><nav class="navbar navbar-expand-lg custom-nav">
-  <div class="container-fluid nav  ">
-    <a class="navbar-brand"  style={{ color: "#FFF7F7" }} href="#">Navbar</a>
+    <div className=''><nav class="navbar navbar-expand-lg custom-nav" style={{backgroundColor:'#B027F5'}}>
+  <div class="container nav  " >
+    <a class="navbar-brand fw-bolder fs-4 "  style={{ color: "#FFF7F7", textDecoration: "underline" }} href="#">TripEasy...</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,10 +18,10 @@ const Navbar = () => {
           <a class="nav-link" href="#">Bookings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">MyBookings</a>
+          <a class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Conact Us</a>
+          <a class="nav-link" href="#">Help</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><FaRegUserCircle size={25}/></a>

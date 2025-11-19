@@ -39,7 +39,7 @@ const Banner = () => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-      <div className="container fromtodet p-4 rounded position-absolute top-100 start-50 translate-middle">
+      <div className=" container fromtodet p-4 rounded position-absolute top-100 start-50 translate-middle position-relative">
         <div class="input-group">
           <span class="input-group-text fw-bold" style={{color:'#B027F5'}}>Ticket Easy Journey date</span>
           <input
@@ -64,7 +64,16 @@ const Banner = () => {
             
           />
         </div>
+        <div className="position-absolute top-100 start-50 translate-middle "    style={{
+      color: "#b027f5",
+     
+      padding: "6px 18px",
+      borderRadius:"15px",
+      background: "transparent",
+      fontWeight: "600"
+    }}><button>Search Bus</button></div>
       </div>
+      
     </div>
   );
 };
