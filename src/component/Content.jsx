@@ -2,7 +2,7 @@ import React from 'react'
 
 const Content1 = () => {
   return (
-    <div className='px-3' style={{paddingTop:'75px', }}>
+    <div className='px-3' style={{marginTop:'60px', }}>
     <span className='fw-bolder fs-2' style={{color:'#6A1B9A'}}>    TicketEasy: India’s Leading Online Bus Booking Platform. </span><br/>
 <p className='' style={{color:'#B027F5'}}> TicketEasy is India’s leading bus ticket booking platform for over 09 years and 10+ million satisfied users. It offers a seamless online ticket booking experience for millions of people.</p> 
 

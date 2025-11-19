@@ -3,6 +3,7 @@ import { Ba1 } from "../../assets/assests";
 import { Ba2 } from "../../assets/assests";
 import { Ba3 } from "../../assets/assests";
 import "../Banner/Banner.css";
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="position-relative">
@@ -64,14 +65,25 @@ const Banner = () => {
             
           />
         </div>
-        <div className="position-absolute top-100 start-50 translate-middle "    style={{
+        <div className="position-absolute top-100 start-50 translate-middle " style={{
       color: "#b027f5",
      
       padding: "6px 18px",
-      borderRadius:"15px",
+     
       background: "transparent",
       fontWeight: "600"
-    }}><button>Search Bus</button></div>
+    }}><button ><Link
+    to="/search"
+    style={{
+      textDecoration: "none",
+      color: "#6A1B9A",
+     fontSize:'20px',
+      padding: "6px 18px",
+      borderRadius: "15px",
+    }}
+  >
+    Search Bus
+  </Link></button></div>
       </div>
       
     </div>

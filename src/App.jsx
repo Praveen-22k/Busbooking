@@ -6,6 +6,7 @@ import Service from './pages/Service';
 import Help from './pages/Help';
 import Signin from "./pages/Signin";
 import Login from './pages/Login';
+import Search from './pages/Search';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './component/Navbar/Navbar';
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/service' element={<Service/>}></Route>
         <Route path='/user' element={<Signin/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
+        <Route path='/search' element={<Search/>}></Route>
         
       </Routes>
       
