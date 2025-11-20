@@ -31,7 +31,7 @@ const Help = () => {
 
        
           <button className="btn  mt-3 w-75 w-md-50" style={{backgroundColor:'#B027F5', color:'#FFFF'}}>
-            Contact Us
+           <a href="tel:+91 7825021029" style={{color:'#ffff', textDecoration:'none'}}>Contact Us</a> 
           </button>
         </div>
 
