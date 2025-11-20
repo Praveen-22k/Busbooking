@@ -9,6 +9,8 @@ import Login from "./pages/Login";
 import Search from "./pages/Search";
 import Payment from "./pages/Razorpay";
 import Lastpay from "./pages/Razorpay";
+import Showticket from "./pages/Showticket";
+import CancelTicket from './pages/Cancelticket'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar/Navbar";
 import Seat from "./pages/Seat/Seat";
@@ -28,6 +30,8 @@ function App() {
           <Route path="/seat" element={<Seat />}></Route>
           <Route path="/payment" element={<Checkout />}></Route>
           <Route path="/lastpay" element={<Lastpay />}></Route>
+          <Route path={'/showticket'} elemet={<Showticket/>}/>
+          <Route path={'/cancelticket'} elemet={<CancelTicket/>}/>
         </Routes>
       </BrowserRouter>
     </>

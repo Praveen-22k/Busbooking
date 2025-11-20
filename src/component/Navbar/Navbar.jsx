@@ -38,11 +38,20 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Bookings
-                </a>
-              </li>
+           
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Bookings
+          </a>
+          <ul class="dropdown-menu " style={{backgroundColor:'#B027F5'}}>
+            <li><Link to={'/showticket'} class="dropdown-item" href="#">ShowTickets</Link></li>
+            <li><Link to={'/cancelticket'} class="dropdown-item" href="#"> CancelTickets</Link></li>
+            <li><hr class="dropdown-divider"/></li>
+           
+          </ul>
+        </li>
+
               <li class="nav-item">
                 <Link to={"/service"} class="nav-link" href="#">
                   Services

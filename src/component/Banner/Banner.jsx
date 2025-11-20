@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { Ba1 } from "../../assets/assests";
 import { Ba2 } from "../../assets/assests";
 import { Ba3 } from "../../assets/assests";
+import { Ba4 } from "../../assets/assests";
 import "../Banner/Banner.css";
 import { Link } from "react-router-dom";
 const Banner = () => {
@@ -15,14 +16,14 @@ const Banner = () => {
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={Ba1} class="d-block w-100 " alt="..." />
+            <img src={Ba2} class="d-block w-100 " alt="..." />
             <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
               <h2 class="fw-bold text-white">Fast & Easy Bus Booking</h2>
               <p class="text-white">Your journey begins with comfort</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src={Ba2} class="d-block w-100 " alt="..." />
+            <img src={Ba4} class="d-block w-100 " alt="..." />
             <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
               <h2 class="fw-bold text-white">Travel Anywhere</h2>
               <p class="text-white">Book buses to all major destinations</p>
