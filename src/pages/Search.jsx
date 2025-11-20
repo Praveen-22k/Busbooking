@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { RiSofaFill } from "react-icons/ri";
 import { MdAir } from "react-icons/md";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
@@ -7,9 +7,10 @@ import { FaStar } from "react-icons/fa";
 import { LiaArrowLeftSolid } from "react-icons/lia";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-
+import {Link} from 'react-router-dom'
 
 const Search = () => {
+  const [color, setColor] = useState('#6A1B9A');
   return (
     <div className="container mt-3 border border-dark-subtle p-3 rounded "  style={{ boxShadow: "0 4px 15px rgba(176, 39, 245, 0.25)" }}>
       <div className="row text-center">
@@ -67,11 +68,18 @@ const Search = () => {
             <span className=' fw-bolder text-success'>550</span>/Total kms
         </div>
         <div className="col">
-         <button className="btn text-light" style={{backgroundColor:'#B027F5'}}>Reserve Seat</button>
+         <button className="btn text-light" ><Link to={'/seat'}> <span
+                className=""
+               style={{ color }}
+                onMouseEnter={() => setColor("#ffffff")}
+                onMouseLeave={() => setColor("#6A1B9A")}
+              >
+                Reserve Seat
+              </span></Link></button>
         </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Search;

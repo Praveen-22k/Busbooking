@@ -1,0 +1,57 @@
+.fade-in {
+            animation: fadeIn 0.8s ease-in;
+          }
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+
+         
+          .seat-box {
+            transition: transform 0.2s ease, background-color 0.3s;
+          }
+
+          .seat-box:hover {
+            transform: scale(1.2);
+          }
+
+         
+          .seat.available {
+            background: #f8f9fa;
+            border: 1px solid #aaa;
+          }
+
+         
+          .seat.booked {
+            background: #6A1B9A;
+            color: white;
+            border: none;
+            cursor: not-allowed;
+          }
+
+         
+          .seat.selected {
+            background: #f7c948;
+            color: white;
+            border: none;
+            animation: bounce 0.3s ease;
+          }
+
+         
+          @keyframes bounce {
+            0% { transform: scale(0.8); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+          }
+
+
+          .legend {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            margin-right: 6px;
+          }
+          .legend.available { background: #f8f9fa; border: 1px solid #aaa; }
+          .legend.booked { background: #6A1B9A; }
+          .legend.selected { background: #f7c948; }
