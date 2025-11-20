@@ -85,7 +85,8 @@ const Seat = () => {
           </div>
 
           <hr />
-
+ 
+ 
           <h6 className="fw-bold">Selected Seats</h6>
           <div className="border p-2" style={{ minHeight: "50px" }}>
             {selectedSeats.length === 0
