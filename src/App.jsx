@@ -30,8 +30,8 @@ function App() {
           <Route path="/seat" element={<Seat />}></Route>
           <Route path="/payment" element={<Checkout />}></Route>
           <Route path="/lastpay" element={<Lastpay />}></Route>
-          <Route path={'/showticket'} elemet={<Showticket/>}/>
-          <Route path={'/cancelticket'} elemet={<CancelTicket/>}/>
+          <Route path='/showticket' elemet={<Showticket/>}/>
+          <Route path='/cancelticket' elemet={<CancelTicket/>}/>
         </Routes>
       </BrowserRouter>
     </>
