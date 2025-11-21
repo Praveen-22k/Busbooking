@@ -30,7 +30,6 @@ function App() {
           <Route path="/search" element={<Search />}></Route>
           <Route path="/seat" element={<Seat />}></Route>
           <Route path="/sleeper" element={<Sleeper />}></Route>
-
           <Route path="/payment" element={<Checkout />}></Route>
           <Route path="/lastpay" element={<Lastpay />}></Route>
           <Route path="/showticket" element={<Showticket />}></Route>
