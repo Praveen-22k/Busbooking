@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="text-white pt-5 pb-3"
+      className="text-white pt-5 pb-3 mt-3"
       style={{
         background: `linear-gradient(90deg, ${purple1}, ${purple2})`,
       }}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../../component/Footer/Footer";
 import './Seat.css'
 import {Link} from 'react-router-dom'
 const rows = ["A", "B", "C", "D"];
@@ -8,10 +9,12 @@ const seatsPerRow = 9;
 const bookedSeats = ["A3", "A7", "B5", "C1", "D8"];
 
 const Seat = () => {
+  
   const [selectedSeats, setSelectedSeats] = useState([]);
   const seatPrice = 877;
 
   const handleSeatClick = (seatId) => {
+    
     if (bookedSeats.includes(seatId)) return;
 
     if (selectedSeats.includes(seatId)) {
@@ -28,6 +31,7 @@ const Seat = () => {
   };
 
   return (
+    <>
     <div className="container-fluid p-4 fade-in">
       <div className="row">
         
@@ -114,7 +118,7 @@ const Seat = () => {
               alert(`Proceeding with seats: ${selectedSeats.join(", ")}`)
             }
           >
-          <Link to={'/lastpay'}> PROCEED TO CHECKOUT</Link> 
+          <Link to={'/lastpay'} style={{ textDecoration: "none", color: "white" }}> PROCEED TO CHECKOUT</Link> 
           </button>
 
           {selectedSeats.length === 0 && (
@@ -125,6 +129,8 @@ const Seat = () => {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

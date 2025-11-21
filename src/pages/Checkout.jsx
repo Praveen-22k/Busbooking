@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Footer from "../component/Footer/Footer";
 const Checkout = () => {
   const [amount, setamount] = useState("");
   const handlesubmit = (e) => {
@@ -29,7 +29,13 @@ const Checkout = () => {
     }
   };
   return (
-    <div>
+    <>
+    <div className="container card p-5 my-5 border" style={{    width: "300px",
+    color: "#6A1B9A",
+    borderColor: "#6A1B9A",
+    boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // ⭐ shadow added
+    borderRadius: "12px"}}>
+    <div className='text-center '>
       <h2>Payment Now!</h2>
       <input
         type="text"
@@ -39,9 +45,12 @@ const Checkout = () => {
         value={amount}
         onChange={(e) => setamount(e.target.value)}
       />{" "}
-      <br /> <br />
-      <button onClick={handlesubmit}>Submit</button>
+      <br /> <br /><div className="" >
+      <button onClick={handlesubmit} className="" style={{backgroundColor:'#6A1B9A', color:'#ffff'}}>Submit</button></div>
     </div>
+      
+    </div><Footer/>
+</>
   );
 };
 

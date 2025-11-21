@@ -45,7 +45,7 @@ const Navbar = () => {
             Bookings
           </a>
           <ul class="dropdown-menu " style={{backgroundColor:'#B027F5'}}>
-            <li><Link to={'/showticket'} class="dropdown-item" href="#">ShowTickets</Link></li>
+            <li><Link to={"/showticket"} class="dropdown-item" href="#">ShowTickets</Link></li>
             <li><Link to={'/cancelticket'} class="dropdown-item" href="#"> CancelTickets</Link></li>
             <li><hr class="dropdown-divider"/></li>
            

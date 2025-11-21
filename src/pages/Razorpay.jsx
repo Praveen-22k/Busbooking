@@ -1,7 +1,9 @@
 import React from "react";
 import {Link} from 'react-router-dom' 
+import Footer from "../component/Footer/Footer";
 const Lastpay = () => {
   return (
+    <>
     <div className="container mt-5">
 
       <div className="row">
@@ -115,6 +117,8 @@ const Lastpay = () => {
 
       </div>
     </div>
+     <Footer/>
+    </>
   );
 };
 

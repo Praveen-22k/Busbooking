@@ -8,7 +8,7 @@ import { LiaArrowLeftSolid } from "react-icons/lia";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import {Link} from 'react-router-dom'
-
+import Footer from "../component/Footer/Footer";
 const Search = () => {
   const [color, setColor] = useState('#6A1B9A');
   return (
@@ -147,6 +147,7 @@ const Search = () => {
         </div>
       </div>  
     </div>
+    <Footer></Footer>
     </>
   );  
 };
