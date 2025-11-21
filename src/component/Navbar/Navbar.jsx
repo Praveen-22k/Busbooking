@@ -5,7 +5,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div className="">
+    <div >
       <nav
         class="navbar navbar-expand-lg custom-nav"
         style={{ backgroundColor: "#B027F5" }}

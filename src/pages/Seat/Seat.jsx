@@ -2,40 +2,29 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../component/Footer/Footer";
 import './Seat.css'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
+import Seatbus from "./Seatbus";
+import Sleeper from "../sleeper";
 const rows = ["A", "B", "C", "D"];
 const seatsPerRow = 9;
-
 const bookedSeats = ["A3", "A7", "B5", "C1", "D8"];
 
 const Seat = () => {
-  
+    const { state:{busId,busType} } = useLocation();
+    console.log(busType)
   const [selectedSeats, setSelectedSeats] = useState([]);
   const seatPrice = 877;
 
-  const handleSeatClick = (seatId) => {
-    
-    if (bookedSeats.includes(seatId)) return;
 
-    if (selectedSeats.includes(seatId)) {
-      setSelectedSeats(selectedSeats.filter((s) => s !== seatId));
-    } else {
-      setSelectedSeats([...selectedSeats, seatId]);
-    }
-  };
-
-  const getSeatClass = (seatId) => {
-    if (bookedSeats.includes(seatId)) return "seat booked";
-    if (selectedSeats.includes(seatId)) return "seat selected";
-    return "seat available";
-  };
 
   return (
     <>
     <div className="container-fluid p-4 fade-in">
       <div className="row">
-        
-        <div className="col-md-7 p-3 border-end">
+        {
+          busType === "A/C Sleeper" || busType === 'NON-A/C Sleeper' ?  <Sleeper busId={busId}/> : <Seatbus busId={busId}/>
+        }
+        {/* <div className="col-md-7 p-3 border-end">
           <h5 className="fw-bold mb-3">
             Click on available seats to reserve your seat
           </h5>
@@ -73,7 +62,7 @@ const Seat = () => {
               <span className="legend selected"></span> Selected
             </div>
           </div>
-        </div>
+        </div> */}
 
         
         <div className="col-md-5 p-4">

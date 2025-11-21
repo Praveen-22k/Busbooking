@@ -16,9 +16,11 @@ import Navbar from "./component/Navbar/Navbar";
 import Seat from "./pages/Seat/Seat";
 import Sleeper from "./pages/sleeper";
 import Checkout from "./pages/Checkout";
+import { Toaster } from "sonner";
 function App() {
   return (
     <>
+     <Toaster position="top-right" richColors />
       <BrowserRouter>
         <Navbar />
         <Routes>
